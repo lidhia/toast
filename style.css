@@ -1,12 +1,38 @@
+.container {
+    margin: auto;
+    background-color: #16a085;
+    padding: 10px;
+    color: #ecf0f1;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #8e44ad;
+    color: #ecf0f1;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #9b59b6;
+}
+
+#toast div {
+    color: #ecf0f1;
+}
+
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
+  background-color: #16a085; /* Black background color */
+  color: #ecf0f1; /* White text color */
   text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
+  border-radius: 5px; /* Rounded borders */
   padding: 16px; /* Padding */
   position: fixed; /* Sit on top of the screen */
   z-index: 1; /* Add a z-index if needed */
