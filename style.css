@@ -1,8 +1,14 @@
+body {
+    background-color: #8e44ad;
+}
+
 .container {
+    width: 50%;
+    text-align: center;
     margin: auto;
-    background-color: #16a085;
+    background-color: #ecf0f1;
     padding: 10px;
-    color: #ecf0f1;
+    color: #000;
     border-radius: 5px;
 }
 
@@ -20,9 +26,15 @@ button:hover {
     background-color: #9b59b6;
 }
 
-#toast div {
+.container #toast #img {
+    background-color: #9b59b6;
+}
+
+.container #toast #desc {
     color: #ecf0f1;
 }
+
+
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
