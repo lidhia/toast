@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Toast</title>
+        <script type="text/javascript">
+
+            function myFunction() {
+                // Get the snackbar DIV
+                var x = document.getElementById("snackbar");
+
+                // Add the "show" class to DIV
+                x.className = "show";
+
+                // After 3 seconds, remove the show class from DIV
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+
+            function launch_toast() {
+
+                var x = document.getElementById("toast");
+                x.className = "show";
+
+                setTimeout(function(){
+                    x.className = x.className.replace("show", "");
+                }, 5000);
+
+            }
+
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="launch_toast()">
+
+        <!-- Use a button to open the snackbar -->
+        <button onclick="myFunction()">Show Snackbar</button>
+
+        <!-- The actual snackbar -->
+        <div id="snackbar">Some text some message..</div>
+
+
+
+        <!-- TOAST WITH ICON -->
+
+        <h2>Toast</h2>
+        <p>Click on the button to show the Toast. It will disappear after 5 seconds.</p>
+
+        <button onclick="launch_toast()">Show Toast</button>
+
+        <div id="toast"><div id="img">Icon</div><div id="desc">A notification message..</div></div>
+
+
+    </body>
+</html>
